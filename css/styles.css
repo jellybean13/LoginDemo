@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "GoogleSans-Regular";
+  src: url(../font/GoogleSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoogleSans-Italic";
+  src: url(../font/GoogleSans-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GoogleSans-Medium";
+  src: url(../font/GoogleSans-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoogleSans-MediumItalic";
+  src: url(../font/GoogleSans-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GoogleSans-Bold";
+  src: url(../font/GoogleSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoogleSans-BoldItalic";
+  src: url(../font/GoogleSans-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #303030;
+  color: #FFFFFF;
+  font-family: GoogleSans-Regular;
+}
+
+#logo {
+	width: 30%;
+	height: 64px;
+	padding: 8px;
+}
+
+.form-outer_div {
+	font-size: 18px;
+	border: #242424 1px solid;
+	border-radius: 4px;
+	background-color: #242424;
+	margin-left: 35%;
+	margin-right: 35%
+}
+
+.form-inner_div {
+	margin-left: 15%;
+}
+
+.form-input {
+  color: #FFFFFF;
+  width: 70%;
+  height: 32px;
+  font-size: 24px;
+  margin-bottom: 8px;
+  background: #242424;
+  border-collapse: collapse;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #FFFFFF;
+  font-family: GoogleSans-Regular;
+}
+
+.form-input:focus {
+  outline: none;
+  background: #242424;
+  border-bottom-color: #8AB4F8;
+}
+
+.button_wrapper {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+button {
+	background-color: #8AB4F8;
+	font-family: GoogleSans-Regular;
+	border: none;
+	border-radius: 4px;
+	color: #FFFFFF;
+	padding: 4px;
+	width: 128px;
+	height: 32px;
+	margin: 16px;
+}
+
+button:disabled {
+  background-color: rgba(90, 89, 91, 0.3);  /* #4D5A595B */
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #A2C3FA; /* #FF8AB4F8 with #33FFFFFF */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>The emulated form</title>
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<script src="./js/main.js"></script>
+	</head>
+	<body onload="load()">
+		<script>
+			/* Display the warning dialog. */
+			alert(getWarningText());
+		</script>
+		<div align="center">
+			<canvas id="title" width="450px" height="100px">
+				E: This browser doesn\'t support this feature.
+			</canvas>
+		</div>
+		<form id="signin" action="" method="post">
+			<div class="form-outer_div" align="center">
+				<a title="Orange Studio Logo" href="https://www.cggzs.cn" target="_blank">
+					<img id="logo" src="./img/logo.png" /><br>
+				</a>
+				<div class="form-inner_div" align="left">
+					<font color="#8AB4F8">Username</font><br>
+				</div>
+				<input id="username" class="form-input" type="text" name="username" placeholder="Your username." /><br>
+				<div class="form-inner_div" align="left">
+					<font color="#8AB4F8">Password</font><br>
+				</div>
+				<input id="password" class="form-input" type="password" name="password" placeholder="Your password." /><br>
+				<div class="form-inner_div" align="left">
+					<label for="remember">
+						<input id="remember" type="checkbox" name="remember_password">Remember password</input><br>
+					</label>
+				</div>
+				<div class="button_wrapper">
+					<button type="button" onclick="signIn()">Sign in</button>					
+				</div>
+				<div>
+					<!-- Empty, to be filled by more options. -->
+				</div>
+			</div>
+		</form>
+		<p align="center">
+		    Copyright (C) 2020 The JELLY BEAN Project
+		</p>
+	</body>
+</html>
